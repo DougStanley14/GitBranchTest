@@ -23,7 +23,30 @@ app.MapControllers();
 
 app.MapGet("/branch", () =>
 {
-    var version = $"{GitVersionInformation.BranchName} {GitVersionInformation.FullSemVer}";
+    var info = GitVersionInformation.FullBuildMetaData;
+    var ginfo = GitVersionInformation.InformationalVersion;
+    
+    var mucho = new
+    {
+        GitVersionInformation.BranchName,
+        GitVersionInformation.FullSemVer,
+        GitVersionInformation.FullBuildMetaData,
+        GitVersionInformation.SemVer,
+        GitVersionInformation.InformationalVersion,
+        GitVersionInformation.Patch,
+        GitVersionInformation.BuildMetaData,
+        GitVersionInformation.CommitsSinceVersionSource,
+        GitVersionInformation.CommitsSinceVersionSourcePadded,
+        GitVersionInformation.CommitDate,
+        GitVersionInformation.NuGetVersionV2,
+        GitVersionInformation.NuGetVersion,
+        GitVersionInformation.NuGetPreReleaseTagV2,
+        GitVersionInformation.NuGetPreReleaseTag,
+        GitVersionInformation.VersionSourceSha,
+    };
+
+
+    var version = $"{GitVersionInformation.BranchName} {GitVersionInformation.FullSemVer} {info}";
     return version;
 });
 
