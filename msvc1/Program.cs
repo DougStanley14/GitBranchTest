@@ -23,7 +23,8 @@ app.MapControllers();
 
 app.MapGet("/branch", () =>
 {
-    return GitVersionInformation.FullSemVer;
+    var version = $"{GitVersionInformation.BranchName} {GitVersionInformation.FullSemVer}";
+    return version;
 });
 
 app.Run();
