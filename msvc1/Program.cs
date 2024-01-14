@@ -21,7 +21,7 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.MapGet("/branch", () =>
+app.MapGet("/version", () =>
 {
     var info = GitVersionInformation.FullBuildMetaData;
     var ginfo = GitVersionInformation.InformationalVersion;
@@ -46,7 +46,16 @@ app.MapGet("/branch", () =>
     };
 
 
-    var version = $"{GitVersionInformation.BranchName} {GitVersionInformation.FullSemVer} {info}";
+    var version = $"{GitVersionInformation.SemVer}";
+    return version;
+});
+
+app.MapGet("/version/info", () =>
+{
+    var info = GitVersionInformation.FullBuildMetaData;
+    var ginfo = GitVersionInformation.InformationalVersion;
+
+    var version = $"{GitVersionInformation.InformationalVersion}";
     return version;
 });
 
