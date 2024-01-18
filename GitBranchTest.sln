@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "msvc2", "msvc2\msvc2.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "msvc3", "msvc3\msvc3.csproj", "{9C54E483-7BAA-4753-A1A2-BF7EC75D8EF6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ndds.lib", "ndds.lib\ndds.lib.csproj", "{6974A731-4D32-42B8-BB28-4C48EC8312E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{9C54E483-7BAA-4753-A1A2-BF7EC75D8EF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C54E483-7BAA-4753-A1A2-BF7EC75D8EF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C54E483-7BAA-4753-A1A2-BF7EC75D8EF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6974A731-4D32-42B8-BB28-4C48EC8312E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6974A731-4D32-42B8-BB28-4C48EC8312E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6974A731-4D32-42B8-BB28-4C48EC8312E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6974A731-4D32-42B8-BB28-4C48EC8312E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
