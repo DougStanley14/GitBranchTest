@@ -43,7 +43,7 @@ app.MapGet("/version", () =>
     var info = GitVersionInformation.FullBuildMetaData;
     var ginfo = GitVersionInformation.InformationalVersion;
 
-    Log.Information("Version: {version}", info);
+    Log.Information("SemVer: {version}", info);
     
     var mucho = new
     {
