@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "msvc1", "msvc1\msvc1.csproj", "{65088041-92BF-4106-90BE-631337D8935D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "msvc1", "msvc1\msvc1.csproj", "{65088041-92BF-4106-90BE-631337D8935D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "msvc2", "msvc2\msvc2.csproj", "{66CCDAF8-6CC3-4CCF-8C92-01031300FEFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "msvc2", "msvc2\msvc2.csproj", "{66CCDAF8-6CC3-4CCF-8C92-01031300FEFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "msvc3", "msvc3\msvc3.csproj", "{9C54E483-7BAA-4753-A1A2-BF7EC75D8EF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "msvc3", "msvc3\msvc3.csproj", "{9C54E483-7BAA-4753-A1A2-BF7EC75D8EF6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ndds.lib", "ndds.lib\ndds.lib.csproj", "{6974A731-4D32-42B8-BB28-4C48EC8312E7}"
 EndProject
